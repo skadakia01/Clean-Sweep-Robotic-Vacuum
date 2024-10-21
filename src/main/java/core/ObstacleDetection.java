@@ -10,7 +10,7 @@ public class ObstacleDetection {
     private void generateObstacles() {
         for (int i = 0; i < obstacleMap.length; i++) {
             for (int j = 0; j < obstacleMap[i].length; j++) {
-                if (Math.random() < 0.2) { // 20% chance of obstacle
+                if (Math.random() < 0.2) {
                     obstacleMap[i][j] = true;
                 }
             }

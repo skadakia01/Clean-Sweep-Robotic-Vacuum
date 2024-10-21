@@ -10,7 +10,6 @@ public class DirtDetection {
         generateDirt();
     }
 
-    // Simulate dirt on the grid
     private void generateDirt() {
         for (int i = 0; i < dirtMap.length; i++) {
             for (int j = 0; j < dirtMap[i].length; j++) {

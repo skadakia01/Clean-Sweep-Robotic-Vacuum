@@ -1,11 +1,11 @@
 public class NavigationSystem {
-    private int x, y; // Current position
-    private int maxX, maxY; // Grid limits
+    private int x, y;
+    private int maxX, maxY;
 
     public NavigationSystem(int maxX, int maxY) {
         this.maxX = maxX;
         this.maxY = maxY;
-        this.x = 0; // Start at origin
+        this.x = 0;
         this.y = 0;
     }
 

@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class CleanSweepController {
     public static void main(String[] args) {
-        // Define grid size
+
         int gridX = 10;
         int gridY = 10;
 
-        // Initialize systems
+
         NavigationSystem navigation = new NavigationSystem(gridX, gridY);
         DirtDetection dirtDetection = new DirtDetection(gridX, gridY);
         ObstacleDetection obstacleDetection = new ObstacleDetection(gridX, gridY);
@@ -54,7 +54,6 @@ public class CleanSweepController {
                     System.out.println("Invalid command.");
             }
 
-            // Check for dirt and clean
             int[] currentPosition = navigation.getPosition();
             if (dirtDetection.isDirtAt(currentPosition[0], currentPosition[1])) {
                 System.out.println("Dirt detected!");
